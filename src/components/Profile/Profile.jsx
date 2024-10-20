@@ -1,18 +1,14 @@
-import MyPosts from "./MyPosts/MyPosts";
-// import s from "./Profile.module.css";
+import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 
-const Profile = (props) => {
+const Profile = () => {
 // debugger;
 
   return (
     <div>
       <ProfileInfo />
-      <MyPosts posts={props.profilePage.posts}
-        newPostText={props.profilePage.newPostText}
-        dispatch={props.dispatch}   />       
-        
+      <MyPostsContainer />
     </div>
   );
 };
